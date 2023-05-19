@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btnCliExcluir = new System.Windows.Forms.Button();
+            this.btnClitEditar = new System.Windows.Forms.Button();
+            this.btnCliSalvar = new System.Windows.Forms.Button();
+            this.NascCliTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.CliList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.SenhaCliTxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SexCliTxt = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.FoneCliTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NomeCliTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,18 +62,18 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.AssiCliTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.AtiCliTxt = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.PersonalCliTxt = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CliList)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -122,56 +122,57 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnCliExcluir
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1070, 186);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 35);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "Excluir";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCliExcluir.BackColor = System.Drawing.Color.Crimson;
+            this.btnCliExcluir.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnCliExcluir.Location = new System.Drawing.Point(1070, 186);
+            this.btnCliExcluir.Name = "btnCliExcluir";
+            this.btnCliExcluir.Size = new System.Drawing.Size(115, 35);
+            this.btnCliExcluir.TabIndex = 38;
+            this.btnCliExcluir.Text = "Excluir";
+            this.btnCliExcluir.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnClitEditar
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkCyan;
-            this.button2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(949, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 35);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClitEditar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnClitEditar.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClitEditar.ForeColor = System.Drawing.Color.White;
+            this.btnClitEditar.Location = new System.Drawing.Point(949, 186);
+            this.btnClitEditar.Name = "btnClitEditar";
+            this.btnClitEditar.Size = new System.Drawing.Size(115, 35);
+            this.btnClitEditar.TabIndex = 37;
+            this.btnClitEditar.Text = "Editar";
+            this.btnClitEditar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnCliSalvar
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(828, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 35);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCliSalvar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCliSalvar.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnCliSalvar.Location = new System.Drawing.Point(828, 186);
+            this.btnCliSalvar.Name = "btnCliSalvar";
+            this.btnCliSalvar.Size = new System.Drawing.Size(115, 35);
+            this.btnCliSalvar.TabIndex = 36;
+            this.btnCliSalvar.Text = "Salvar";
+            this.btnCliSalvar.UseVisualStyleBackColor = false;
+            this.btnCliSalvar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // guna2DateTimePicker1
+            // NascCliTxt
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.DarkCyan;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(623, 87);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(168, 27);
-            this.guna2DateTimePicker1.TabIndex = 35;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 5, 18, 12, 4, 42, 573);
+            this.NascCliTxt.Checked = true;
+            this.NascCliTxt.FillColor = System.Drawing.Color.DarkCyan;
+            this.NascCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NascCliTxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NascCliTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NascCliTxt.Location = new System.Drawing.Point(623, 87);
+            this.NascCliTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.NascCliTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.NascCliTxt.Name = "NascCliTxt";
+            this.NascCliTxt.Size = new System.Drawing.Size(168, 27);
+            this.NascCliTxt.TabIndex = 35;
+            this.NascCliTxt.Value = new System.DateTime(2023, 5, 18, 12, 4, 42, 573);
             // 
             // label8
             // 
@@ -183,57 +184,57 @@
             this.label8.TabIndex = 34;
             this.label8.Text = "Dados inseridos:";
             // 
-            // guna2DataGridView1
+            // CliList
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(206, 231);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(979, 229);
-            this.guna2DataGridView1.TabIndex = 33;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.CliList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CliList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.CliList.ColumnHeadersHeight = 4;
+            this.CliList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CliList.DefaultCellStyle = dataGridViewCellStyle6;
+            this.CliList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CliList.Location = new System.Drawing.Point(206, 231);
+            this.CliList.Name = "CliList";
+            this.CliList.RowHeadersVisible = false;
+            this.CliList.RowHeadersWidth = 51;
+            this.CliList.RowTemplate.Height = 24;
+            this.CliList.Size = new System.Drawing.Size(979, 229);
+            this.CliList.TabIndex = 33;
+            this.CliList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.CliList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.CliList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.CliList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.CliList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.CliList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.CliList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CliList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CliList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.CliList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CliList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.CliList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.CliList.ThemeStyle.HeaderStyle.Height = 4;
+            this.CliList.ThemeStyle.ReadOnly = false;
+            this.CliList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.CliList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CliList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CliList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CliList.ThemeStyle.RowsStyle.Height = 24;
+            this.CliList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CliList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // label7
             // 
@@ -245,13 +246,13 @@
             this.label7.TabIndex = 32;
             this.label7.Text = "Senha:";
             // 
-            // textBox4
+            // SenhaCliTxt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(376, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(157, 27);
-            this.textBox4.TabIndex = 31;
+            this.SenhaCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SenhaCliTxt.Location = new System.Drawing.Point(376, 165);
+            this.SenhaCliTxt.Name = "SenhaCliTxt";
+            this.SenhaCliTxt.Size = new System.Drawing.Size(157, 27);
+            this.SenhaCliTxt.TabIndex = 31;
             // 
             // label6
             // 
@@ -273,17 +274,17 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Sexo:";
             // 
-            // comboBox1
+            // SexCliTxt
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.SexCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SexCliTxt.FormattingEnabled = true;
+            this.SexCliTxt.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.comboBox1.Location = new System.Drawing.Point(487, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(104, 27);
-            this.comboBox1.TabIndex = 28;
+            this.SexCliTxt.Location = new System.Drawing.Point(487, 87);
+            this.SexCliTxt.Name = "SexCliTxt";
+            this.SexCliTxt.Size = new System.Drawing.Size(104, 27);
+            this.SexCliTxt.TabIndex = 28;
             // 
             // label4
             // 
@@ -295,13 +296,13 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Telefone:";
             // 
-            // textBox3
+            // FoneCliTxt
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(206, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 27);
-            this.textBox3.TabIndex = 26;
+            this.FoneCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FoneCliTxt.Location = new System.Drawing.Point(206, 165);
+            this.FoneCliTxt.Name = "FoneCliTxt";
+            this.FoneCliTxt.Size = new System.Drawing.Size(152, 27);
+            this.FoneCliTxt.TabIndex = 26;
             // 
             // label2
             // 
@@ -313,13 +314,13 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Nome Completo:";
             // 
-            // textBox1
+            // NomeCliTxt
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(206, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 27);
-            this.textBox1.TabIndex = 22;
+            this.NomeCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomeCliTxt.Location = new System.Drawing.Point(206, 87);
+            this.NomeCliTxt.Name = "NomeCliTxt";
+            this.NomeCliTxt.Size = new System.Drawing.Size(263, 27);
+            this.NomeCliTxt.TabIndex = 22;
             // 
             // label1
             // 
@@ -439,20 +440,20 @@
             this.panel1.Size = new System.Drawing.Size(161, 446);
             this.panel1.TabIndex = 20;
             // 
-            // guna2DateTimePicker2
+            // AssiCliTxt
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.DarkCyan;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(808, 87);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(168, 27);
-            this.guna2DateTimePicker2.TabIndex = 40;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 5, 18, 12, 4, 42, 573);
+            this.AssiCliTxt.Checked = true;
+            this.AssiCliTxt.FillColor = System.Drawing.Color.DarkCyan;
+            this.AssiCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AssiCliTxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AssiCliTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.AssiCliTxt.Location = new System.Drawing.Point(808, 87);
+            this.AssiCliTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.AssiCliTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.AssiCliTxt.Name = "AssiCliTxt";
+            this.AssiCliTxt.Size = new System.Drawing.Size(168, 27);
+            this.AssiCliTxt.TabIndex = 40;
+            this.AssiCliTxt.Value = new System.DateTime(2023, 5, 18, 12, 4, 42, 573);
             // 
             // label3
             // 
@@ -474,18 +475,18 @@
             this.label14.TabIndex = 42;
             this.label14.Text = "Ativo:";
             // 
-            // comboBox2
+            // AtiCliTxt
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.AtiCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AtiCliTxt.FormattingEnabled = true;
+            this.AtiCliTxt.Items.AddRange(new object[] {
             "Sim",
             "Não",
             "Pendente"});
-            this.comboBox2.Location = new System.Drawing.Point(995, 87);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(104, 27);
-            this.comboBox2.TabIndex = 41;
+            this.AtiCliTxt.Location = new System.Drawing.Point(995, 87);
+            this.AtiCliTxt.Name = "AtiCliTxt";
+            this.AtiCliTxt.Size = new System.Drawing.Size(104, 27);
+            this.AtiCliTxt.TabIndex = 41;
             // 
             // label15
             // 
@@ -497,18 +498,18 @@
             this.label15.TabIndex = 44;
             this.label15.Text = "Personal:";
             // 
-            // comboBox3
+            // PersonalCliTxt
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.PersonalCliTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PersonalCliTxt.FormattingEnabled = true;
+            this.PersonalCliTxt.Items.AddRange(new object[] {
             "Sim",
             "Não",
             "Pendente"});
-            this.comboBox3.Location = new System.Drawing.Point(1108, 87);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(104, 27);
-            this.comboBox3.TabIndex = 43;
+            this.PersonalCliTxt.Location = new System.Drawing.Point(1108, 87);
+            this.PersonalCliTxt.Name = "PersonalCliTxt";
+            this.PersonalCliTxt.Size = new System.Drawing.Size(104, 27);
+            this.PersonalCliTxt.TabIndex = 43;
             // 
             // pictureBox7
             // 
@@ -527,39 +528,40 @@
             this.ClientSize = new System.Drawing.Size(1233, 471);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.PersonalCliTxt);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.guna2DateTimePicker2);
+            this.Controls.Add(this.AtiCliTxt);
+            this.Controls.Add(this.AssiCliTxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.btnCliExcluir);
+            this.Controls.Add(this.btnClitEditar);
+            this.Controls.Add(this.btnCliSalvar);
+            this.Controls.Add(this.NascCliTxt);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.CliList);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.SenhaCliTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.SexCliTxt);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.FoneCliTxt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NomeCliTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Clientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Membros";
             this.Load += new System.EventHandler(this.Membros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CliList)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -579,21 +581,21 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.Button btnCliExcluir;
+        private System.Windows.Forms.Button btnClitEditar;
+        private System.Windows.Forms.Button btnCliSalvar;
+        private Guna.UI2.WinForms.Guna2DateTimePicker NascCliTxt;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView CliList;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox SenhaCliTxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox SexCliTxt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox FoneCliTxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NomeCliTxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -605,12 +607,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker AssiCliTxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox AtiCliTxt;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox PersonalCliTxt;
         private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
