@@ -46,20 +46,20 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.PNome = new System.Windows.Forms.TextBox();
+            this.nomeTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.PCREF = new System.Windows.Forms.TextBox();
+            this.crefTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.PFone = new System.Windows.Forms.TextBox();
-            this.PSex = new System.Windows.Forms.ComboBox();
+            this.foneTxt = new System.Windows.Forms.TextBox();
+            this.sexTxt = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.PSenha = new System.Windows.Forms.TextBox();
+            this.senhaTxt = new System.Windows.Forms.TextBox();
             this.PList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label8 = new System.Windows.Forms.Label();
-            this.PNasc = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.nascTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -223,13 +223,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Personal Trainer";
             // 
-            // PNome
+            // nomeTxt
             // 
-            this.PNome.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PNome.Location = new System.Drawing.Point(191, 85);
-            this.PNome.Name = "PNome";
-            this.PNome.Size = new System.Drawing.Size(263, 27);
-            this.PNome.TabIndex = 2;
+            this.nomeTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeTxt.Location = new System.Drawing.Point(191, 85);
+            this.nomeTxt.Name = "nomeTxt";
+            this.nomeTxt.Size = new System.Drawing.Size(263, 27);
+            this.nomeTxt.TabIndex = 2;
             // 
             // label2
             // 
@@ -251,13 +251,13 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "CREF:";
             // 
-            // PCREF
+            // crefTxt
             // 
-            this.PCREF.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PCREF.Location = new System.Drawing.Point(471, 85);
-            this.PCREF.Name = "PCREF";
-            this.PCREF.Size = new System.Drawing.Size(139, 27);
-            this.PCREF.TabIndex = 4;
+            this.crefTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crefTxt.Location = new System.Drawing.Point(471, 85);
+            this.crefTxt.Name = "crefTxt";
+            this.crefTxt.Size = new System.Drawing.Size(139, 27);
+            this.crefTxt.TabIndex = 4;
             // 
             // label4
             // 
@@ -269,25 +269,25 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Telefone:";
             // 
-            // PFone
+            // foneTxt
             // 
-            this.PFone.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PFone.Location = new System.Drawing.Point(191, 163);
-            this.PFone.Name = "PFone";
-            this.PFone.Size = new System.Drawing.Size(157, 27);
-            this.PFone.TabIndex = 6;
+            this.foneTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foneTxt.Location = new System.Drawing.Point(191, 163);
+            this.foneTxt.Name = "foneTxt";
+            this.foneTxt.Size = new System.Drawing.Size(157, 27);
+            this.foneTxt.TabIndex = 6;
             // 
-            // PSex
+            // sexTxt
             // 
-            this.PSex.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PSex.FormattingEnabled = true;
-            this.PSex.Items.AddRange(new object[] {
+            this.sexTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sexTxt.FormattingEnabled = true;
+            this.sexTxt.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.PSex.Location = new System.Drawing.Point(632, 85);
-            this.PSex.Name = "PSex";
-            this.PSex.Size = new System.Drawing.Size(97, 27);
-            this.PSex.TabIndex = 8;
+            this.sexTxt.Location = new System.Drawing.Point(632, 85);
+            this.sexTxt.Name = "sexTxt";
+            this.sexTxt.Size = new System.Drawing.Size(97, 27);
+            this.sexTxt.TabIndex = 8;
             // 
             // label5
             // 
@@ -319,13 +319,13 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Senha:";
             // 
-            // PSenha
+            // senhaTxt
             // 
-            this.PSenha.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PSenha.Location = new System.Drawing.Point(378, 163);
-            this.PSenha.Name = "PSenha";
-            this.PSenha.Size = new System.Drawing.Size(157, 27);
-            this.PSenha.TabIndex = 12;
+            this.senhaTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senhaTxt.Location = new System.Drawing.Point(378, 163);
+            this.senhaTxt.Name = "senhaTxt";
+            this.senhaTxt.Size = new System.Drawing.Size(157, 27);
+            this.senhaTxt.TabIndex = 12;
             // 
             // PList
             // 
@@ -389,20 +389,20 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Dados inseridos:";
             // 
-            // PNasc
+            // nascTxt
             // 
-            this.PNasc.Checked = true;
-            this.PNasc.FillColor = System.Drawing.Color.DarkCyan;
-            this.PNasc.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PNasc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.PNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.PNasc.Location = new System.Drawing.Point(758, 85);
-            this.PNasc.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.PNasc.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.PNasc.Name = "PNasc";
-            this.PNasc.Size = new System.Drawing.Size(168, 27);
-            this.PNasc.TabIndex = 16;
-            this.PNasc.Value = new System.DateTime(2023, 5, 18, 12, 4, 42, 573);
+            this.nascTxt.Checked = true;
+            this.nascTxt.FillColor = System.Drawing.Color.DarkCyan;
+            this.nascTxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nascTxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.nascTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.nascTxt.Location = new System.Drawing.Point(758, 85);
+            this.nascTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.nascTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.nascTxt.Name = "nascTxt";
+            this.nascTxt.Size = new System.Drawing.Size(168, 27);
+            this.nascTxt.TabIndex = 16;
+            this.nascTxt.Value = new System.DateTime(2023, 5, 18, 12, 4, 42, 573);
             // 
             // btnSalvar
             // 
@@ -461,20 +461,20 @@
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.PNasc);
+            this.Controls.Add(this.nascTxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.PList);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.PSenha);
+            this.Controls.Add(this.senhaTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.PSex);
+            this.Controls.Add(this.sexTxt);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.PFone);
+            this.Controls.Add(this.foneTxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.PCREF);
+            this.Controls.Add(this.crefTxt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.PNome);
+            this.Controls.Add(this.nomeTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -502,20 +502,20 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox PNome;
+        private System.Windows.Forms.TextBox nomeTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox PCREF;
+        private System.Windows.Forms.TextBox crefTxt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox PFone;
-        private System.Windows.Forms.ComboBox PSex;
+        private System.Windows.Forms.TextBox foneTxt;
+        private System.Windows.Forms.ComboBox sexTxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox PSenha;
+        private System.Windows.Forms.TextBox senhaTxt;
         private Guna.UI2.WinForms.Guna2DataGridView PList;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2DateTimePicker PNasc;
+        private Guna.UI2.WinForms.Guna2DateTimePicker nascTxt;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnSalvar;

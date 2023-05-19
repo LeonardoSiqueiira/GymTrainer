@@ -18,7 +18,7 @@ namespace GymProject.Funcoes
 
         public Func()
         {
-            ConStr = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\leo20\\OneDrive\\Documentos\\FitnesDB.mdf;Integrated Security=True;Connect Timeout=30";
+            ConStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\leo20\\OneDrive\\Documentos\\FitnesDB.mdf;Integrated Security=True;Connect Timeout=30";
             Con = new SqlConnection(ConStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;
