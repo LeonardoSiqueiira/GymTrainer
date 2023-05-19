@@ -26,7 +26,7 @@ namespace GymProject.Funcoes
         public int setData(string Query)
         {
             int cnt = 0;
-            if (Con.State = ConnectionState.Closed)
+            if (Con.State == ConnectionState.Closed)
             {
                 Con.Open();
             }
@@ -35,6 +35,12 @@ namespace GymProject.Funcoes
             Con.Close();
             return cnt;
         }
-
+        public DataTable GetData(string Query)
+        {
+            dt = new DataTable();
+            sda = new SqlDataAdapter(Query, ConStr);
+            sda.Fill(dt);
+            return dt;
+        }
     }
 }

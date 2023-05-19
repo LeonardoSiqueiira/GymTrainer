@@ -52,6 +52,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle.Designer.cs">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcoes\Func.cs" />
+    <Compile Include="Receita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receita.Designer.cs">
+      <DependentUpon>Receita.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trainer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +79,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle.resx">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receita.resx">
+      <DependentUpon>Receita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trainer.resx">
       <DependentUpon>Trainer.cs</DependentUpon>
     </EmbeddedResource>
