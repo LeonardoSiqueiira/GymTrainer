@@ -123,5 +123,24 @@ namespace GymProject
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void lblClient_Click(object sender, EventArgs e)
+        {
+            Clientes obj = new Clientes();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void lblControle_Click(object sender, EventArgs e)
+        {
+            Controle obj = new Controle();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

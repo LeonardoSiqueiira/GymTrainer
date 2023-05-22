@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Controle));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblClient = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblPersonal = new System.Windows.Forms.Label();
             this.btnConExcl = new System.Windows.Forms.Button();
             this.btnConEdit = new System.Windows.Forms.Button();
             this.btnConSal = new System.Windows.Forms.Button();
@@ -84,15 +84,16 @@
             this.pictureBox6.TabIndex = 23;
             this.pictureBox6.TabStop = false;
             // 
-            // label13
+            // lblClient
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(49, 178);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 19);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Clientes";
+            this.lblClient.AutoSize = true;
+            this.lblClient.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClient.Location = new System.Drawing.Point(49, 178);
+            this.lblClient.Name = "lblClient";
+            this.lblClient.Size = new System.Drawing.Size(67, 19);
+            this.lblClient.TabIndex = 22;
+            this.lblClient.Text = "Clientes";
+            this.lblClient.Click += new System.EventHandler(this.lblClient_Click);
             // 
             // pictureBox4
             // 
@@ -128,7 +129,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Menu;
             this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.lblClient);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox3);
@@ -137,7 +138,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.lblPersonal);
             this.panel2.Location = new System.Drawing.Point(27, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(134, 385);
@@ -203,15 +204,16 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Controle";
             // 
-            // label9
+            // lblPersonal
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(46, 100);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 19);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Personal";
+            this.lblPersonal.AutoSize = true;
+            this.lblPersonal.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonal.Location = new System.Drawing.Point(46, 100);
+            this.lblPersonal.Name = "lblPersonal";
+            this.lblPersonal.Size = new System.Drawing.Size(73, 19);
+            this.lblPersonal.TabIndex = 17;
+            this.lblPersonal.Text = "Personal";
+            this.lblPersonal.Click += new System.EventHandler(this.lblPersonal_Click);
             // 
             // btnConExcl
             // 
@@ -264,26 +266,26 @@
             // 
             // ConList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ConList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ConList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ConList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ConList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ConList.ColumnHeadersHeight = 4;
             this.ConList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ConList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ConList.DefaultCellStyle = dataGridViewCellStyle3;
             this.ConList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ConList.Location = new System.Drawing.Point(187, 232);
             this.ConList.Name = "ConList";
@@ -339,7 +341,7 @@
             this.label4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(460, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 24);
+            this.label4.Size = new System.Drawing.Size(47, 19);
             this.label4.TabIndex = 50;
             this.label4.Text = "Dias:";
             // 
@@ -462,7 +464,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblClient;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label12;
@@ -473,7 +475,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblPersonal;
         private System.Windows.Forms.Button btnConExcl;
         private System.Windows.Forms.Button btnConEdit;
         private System.Windows.Forms.Button btnConSal;

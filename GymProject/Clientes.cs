@@ -26,5 +26,19 @@ namespace GymProject
         {
 
         }
+
+        private void lblPerso_Click(object sender, EventArgs e)
+        {
+            Trainer obj = new Trainer();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void lblControle_Click(object sender, EventArgs e)
+        {
+            Controle obj = new Controle();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

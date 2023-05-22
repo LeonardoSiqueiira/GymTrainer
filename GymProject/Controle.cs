@@ -122,5 +122,19 @@ namespace GymProject
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void lblPersonal_Click(object sender, EventArgs e)
+        {
+            Trainer obj = new Trainer();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void lblClient_Click(object sender, EventArgs e)
+        {
+            Controle obj = new Controle();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
