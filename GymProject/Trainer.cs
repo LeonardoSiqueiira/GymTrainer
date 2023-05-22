@@ -142,5 +142,10 @@ namespace GymProject
         {
             Application.Exit();
         }
+
+        private void nascTxt_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
