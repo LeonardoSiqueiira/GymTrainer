@@ -95,5 +95,31 @@ namespace GymProject
             obj.Show();
             this.Hide();
         }
+
+        private void btnClitEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+        int Key = 0;
+        private void CliList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            NomeCliTxt.Text = CliList.SelectedRows[0].Cells[1].Value.ToString();
+            FoneCliTxt.Text = CliList.SelectedRows[0].Cells[2].Value.ToString();
+            SenhaCliTxt.Text = CliList.SelectedRows[0].Cells[3].Value.ToString();
+            SexCliTxt.Text = CliList.SelectedRows[0].Cells[4].Value.ToString();
+            NascCliTxt.Text = CliList.SelectedRows[0].Cells[5].Value.ToString();
+            AssiCliTxt.Text = CliList.SelectedRows[0].Cells[6].Value.ToString();
+            PersonalCliTxt.Text = CliList.SelectedRows[0].Cells[7].Value.ToString();
+            AtiCliTxt.Text = CliList.SelectedRows[0].Cells[8].Value.ToString();
+            ControlCliTxt.Text = CliList.SelectedRows[0].Cells[9].Value.ToString();
+            if (NomeCliTxt.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(CliList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
