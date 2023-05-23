@@ -154,5 +154,12 @@ namespace GymProject
             obj.Show();
             this.Hide();
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

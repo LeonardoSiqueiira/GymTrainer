@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receita));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -52,13 +52,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ClienteRec = new System.Windows.Forms.ComboBox();
             this.AfiliacaoRec = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.DataRec = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ValorRec = new System.Windows.Forms.TextBox();
+            this.RecCli = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -140,6 +140,7 @@
             this.label10.Size = new System.Drawing.Size(70, 19);
             this.label10.TabIndex = 25;
             this.label10.Text = "Controle";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // pictureBox1
             // 
@@ -162,6 +163,7 @@
             this.Cancelar.TabIndex = 51;
             this.Cancelar.Text = "Cancelar";
             this.Cancelar.UseVisualStyleBackColor = false;
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
             // Gerar
             // 
@@ -178,26 +180,26 @@
             // 
             // ReceitaList
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.ReceitaList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReceitaList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.ReceitaList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReceitaList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.ReceitaList.ColumnHeadersHeight = 4;
             this.ReceitaList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ReceitaList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ReceitaList.DefaultCellStyle = dataGridViewCellStyle9;
             this.ReceitaList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ReceitaList.Location = new System.Drawing.Point(531, 63);
             this.ReceitaList.Name = "ReceitaList";
@@ -268,6 +270,7 @@
             this.label12.Size = new System.Drawing.Size(39, 19);
             this.label12.TabIndex = 17;
             this.label12.Text = "Sair";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel3
             // 
@@ -277,6 +280,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(134, 49);
             this.panel3.TabIndex = 17;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel2
             // 
@@ -305,6 +309,7 @@
             this.label9.Size = new System.Drawing.Size(73, 19);
             this.label9.TabIndex = 26;
             this.label9.Text = "Personal";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel1
             // 
@@ -325,15 +330,6 @@
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // ClienteRec
-            // 
-            this.ClienteRec.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClienteRec.FormattingEnabled = true;
-            this.ClienteRec.Location = new System.Drawing.Point(221, 111);
-            this.ClienteRec.Name = "ClienteRec";
-            this.ClienteRec.Size = new System.Drawing.Size(194, 27);
-            this.ClienteRec.TabIndex = 53;
             // 
             // AfiliacaoRec
             // 
@@ -356,7 +352,7 @@
             this.label3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(765, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 24);
+            this.label3.Size = new System.Drawing.Size(108, 19);
             this.label3.TabIndex = 55;
             this.label3.Text = "Receita atual:";
             // 
@@ -381,7 +377,7 @@
             this.label5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(217, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 24);
+            this.label5.Size = new System.Drawing.Size(48, 19);
             this.label5.TabIndex = 56;
             this.label5.Text = "Data:";
             // 
@@ -403,18 +399,31 @@
             this.ValorRec.Size = new System.Drawing.Size(157, 27);
             this.ValorRec.TabIndex = 64;
             // 
+            // RecCli
+            // 
+            this.RecCli.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RecCli.FormattingEnabled = true;
+            this.RecCli.Items.AddRange(new object[] {
+            "Sim",
+            "Não",
+            "Pendente"});
+            this.RecCli.Location = new System.Drawing.Point(221, 111);
+            this.RecCli.Name = "RecCli";
+            this.RecCli.Size = new System.Drawing.Size(157, 27);
+            this.RecCli.TabIndex = 66;
+            // 
             // Receita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 474);
+            this.Controls.Add(this.RecCli);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ValorRec);
             this.Controls.Add(this.DataRec);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.AfiliacaoRec);
-            this.Controls.Add(this.ClienteRec);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.Gerar);
@@ -467,12 +476,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox ClienteRec;
         private Guna.UI2.WinForms.Guna2DateTimePicker AfiliacaoRec;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2DateTimePicker DataRec;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox ValorRec;
+        private System.Windows.Forms.ComboBox RecCli;
     }
 }

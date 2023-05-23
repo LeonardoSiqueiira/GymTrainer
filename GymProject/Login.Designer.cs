@@ -92,6 +92,7 @@
             this.UserSenha.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserSenha.Location = new System.Drawing.Point(275, 282);
             this.UserSenha.Name = "UserSenha";
+            this.UserSenha.PasswordChar = '*';
             this.UserSenha.Size = new System.Drawing.Size(222, 27);
             this.UserSenha.TabIndex = 50;
             // 

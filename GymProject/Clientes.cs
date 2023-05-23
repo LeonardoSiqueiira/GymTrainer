@@ -191,5 +191,17 @@ namespace GymProject
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void PersonalCliTxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

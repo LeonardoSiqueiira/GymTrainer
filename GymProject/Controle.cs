@@ -141,5 +141,12 @@ namespace GymProject
         {
             Application.Exit();
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
