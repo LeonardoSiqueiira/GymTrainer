@@ -14,3 +14,4 @@ C:\Users\leo20\OneDrive\Área de Trabalho\Aula .NET\GymProject\GymProject\obj\De
 C:\Users\leo20\OneDrive\Área de Trabalho\Aula .NET\GymProject\GymProject\obj\Debug\GymProject.Clientes.resources
 C:\Users\leo20\OneDrive\Área de Trabalho\Aula .NET\GymProject\GymProject\obj\Debug\GymProject.Controle.resources
 C:\Users\leo20\OneDrive\Área de Trabalho\Aula .NET\GymProject\GymProject\obj\Debug\GymProject.Receita.resources
+C:\Users\leo20\OneDrive\Área de Trabalho\Aula .NET\GymProject\GymProject\obj\Debug\GymProject.Login.resources
