@@ -147,5 +147,12 @@ namespace GymProject
         {
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Receita obj = new Receita();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
